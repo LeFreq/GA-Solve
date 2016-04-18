@@ -1,6 +1,3 @@
-Note: ..Until I push the files, they are currently available at bitbucket under the same name.
-
-
 Genetic Algorithm Solver for Simple Substitution Ciphers
 Copyright (C) 1993 Mark Janssen   
 
