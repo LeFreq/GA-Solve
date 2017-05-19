@@ -253,9 +253,9 @@ PROCEDURE Fitness(VAR Genes:GenePool);
         Err:=0; TmpErr:=0;
         TmpStr:=Genes[H].Strg;    {helps repetitive index lookups}
         FOR I:='A'TO'Z' DO              {calculate error}
-          BEGIN
+        BEGIN  {will calculate and sum geometric distances from average case}
             K:=TmpStr[Count[I].Loc];       {take this out of inner loop, too}
-            IF UseMonograms
+            IF UseMonograms 
             THEN TmpErr:=TmpErr+abs(Count[I].Ct-CF[TmpStr[ord(Succ(I))-A]]);
             FOR J:='A' TO 'Z' DO                {a lot of time spent here!}
               TmpErr:=TmpErr+abs(Di[K,TmpStr[Count[J].Loc]]-Digram[I,J])
@@ -263,7 +263,8 @@ PROCEDURE Fitness(VAR Genes:GenePool);
         Err:=1-TmpErr/Total/(2+2*ord(UseMonograms)); { /4 if Ch err used,   }
         AbSum:=AbSum+Err;                            { keeps between 0 and 1}
         Genes[H].AFit:=Err;
-        Err:=sqr(sqr(sqr(sqr(Err))));   Sum:=Sum+Err; {amplify differences}
+        Err:=sqr(sqr(sqr(sqr(Err))));   {amplify differences, but should use}
+        Sum:=Sum+Err;                   {better algorithm.  Anyone?}
         Genes[H].CFit:=Err;
         IF Err>Best.CFit THEN  {check see if its better}
           BEGIN                {update new best, if so }
