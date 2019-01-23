@@ -17,9 +17,9 @@ README  .TXT    This file
 
 Note that GA-SOLVE does not need to start with encrypted text for it to
 be interesting.  Since the initial gene pool will start out with random
-keys, it will effectively encrypt the file for you.  For those who don't
-believe, a sample ciphertext file is included (SAMPLE.CXT).
-
+keys, it will effectively encrypt the file for you and show you the de-
+crypt text, otherwise you can start with a sample ciphertext file in
+SAMPLE.CXT.
 
 For more information, refer to the article on which this program is based:
 
