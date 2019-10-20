@@ -27,9 +27,8 @@ For more information, refer to the article on which this program is based:
         Ciphers," CRYPTOLOGIA, Volume XVII, Number 1 (Jan 1993).
 
 
-This is free software, you can redistribute it and/or modify it under the 
-terms of the GNU General Public License as published by the Free Software 
-Foundation.  Please see <www.gnu.org> for the full license.
+This software licensed under the Creative Commons, SA-A-NC and is offered
+without cost.  Some elements within have patents pending.
 
 Comments are welcome.
 
