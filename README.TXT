@@ -1,6 +1,5 @@
 Genetic Algorithm Solver for Simple Substitution Ciphers
-Copyright (C) 1993 Mark Janssen   
-
+Mark Janssen   
 
 The files archived here should be the following:
 
@@ -13,7 +12,6 @@ SAMPLE  .CXT    Sample ciphertext
 SAMPLE  .TXT    Cleartext of above
 SAMPLEDI.DAT    Digram file for SAMPLE.TXT
 README  .TXT    This file
-
 
 Note that GA-SOLVE does not need to start with encrypted text for it to
 be interesting.  Since the initial gene pool will start out with random
